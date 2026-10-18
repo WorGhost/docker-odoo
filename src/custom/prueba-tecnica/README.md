@@ -33,3 +33,21 @@ Esta carpeta es el directorio de addons de la prueba. Aquí van **todos los mód
 3. Corre las pruebas: `./odoo test prueba-tecnica sale_commission` (varios módulos separados por coma).
 
 Más detalles del CLI en el `readme.md` de la raíz del repositorio.
+
+## Comandos útiles (instancia `prueba-tecnica`)
+
+```bash
+./odoo start prueba-tecnica           # levanta Odoo + base de datos + nginx
+./odoo logs prueba-tecnica            # logs en vivo
+./odoo shell prueba-tecnica           # shell operativo de Odoo
+./odoo test prueba-tecnica <modulos>  # tests sobre base nueva (ej: sale_commission)
+```
+
+El correo saliente (MailHog) se levanta aparte:
+
+```bash
+docker compose -f docker-compose.generated.yml up -d mailhog
+```
+
+- Odoo: http://localhost:8069 (admin / admin)
+- MailHog: http://localhost:8025
