@@ -5,6 +5,11 @@ Entorno de desarrollo que permite levantar **múltiples instancias de Odoo** (di
 Compatible con Odoo 14.0, 16.0, 17.0, 18.0, 19.0 y master.
 Compatible con Linux y macOS (AMD y ARM).
 
+> **Prueba técnica Binaural — versión declarada: Odoo 18.0.**
+> Instancia `prueba-tecnica` definida en `instances.json` (PostgreSQL 16, puerto 8069).
+> Los módulos de la entrega viven en `src/custom/prueba-tecnica/`; el entorno y las
+> convenciones de trabajo están en `AGENTS.md`.
+
 ## Instalación Rápida
 
 ```bash
